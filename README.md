@@ -1,8 +1,8 @@
-🛩️ Raspberry Pi Pico Drone Build Guide
+**🛩️ Raspberry Pi Pico Drone Build Guide**
 
 This project walks through building and programming a quadcopter flight controller from scratch using a Raspberry Pi Pico W. Unlike Betaflight-based controllers, you will write all flight-control logic yourself — including gyro reading, receiver interpretation, PID stabilization, and ESC PWM output.
 
-📘 Phase 1: System Overview
+**📘 Phase 1: System Overview**
 
 Your Raspberry Pi Pico W acts as the flight controller. Since it lacks built-in flight firmware, your code must:
 
@@ -14,7 +14,7 @@ Use a PID loop to compute stabilization corrections
 
 Output PWM signals to the ESCs to control motor speed
 
-🔌 Phase 2: Wiring Diagram
+**🔌 Phase 2: Wiring Diagram**
 1. Powering the System
 
 The F450 frame includes a bottom plate that functions as a Power Distribution Board (PDB).
@@ -65,7 +65,7 @@ GND → GND
 
 iBUS Signal → GPIO 9 (UART1 RX)
 
-🛠️ Phase 3: Assembly Steps
+**🛠️ Phase 3: Assembly Steps**
 Frame & Power
 
 Solder ESC power wires + XT60 connector to the PDB
@@ -84,7 +84,7 @@ Pico Mounting
 
 Use foam, rubber, or a vibration-isolated mount. Vibrations will degrade gyro performance.
 
-🔄 Phase 4: Motor Rotation & Propellers
+**🔄 Phase 4: Motor Rotation & Propellers**
 
 Quad X configuration:
 
